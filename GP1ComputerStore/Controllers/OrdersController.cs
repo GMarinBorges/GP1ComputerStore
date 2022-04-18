@@ -24,6 +24,7 @@ namespace GP1ComputerStore.Controllers
 
         // GET: api/Orders
         [HttpGet]
+        
         public async Task<ActionResult<IEnumerable<Order>>> GetOrders()
         {
             return await _context.Orders.ToListAsync();

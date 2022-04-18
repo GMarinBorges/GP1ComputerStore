@@ -24,6 +24,7 @@ namespace GP1ComputerStore.Controllers
 
         // GET: api/Payments
         [HttpGet]
+
         public async Task<ActionResult<IEnumerable<Payment>>> GetPayments()
         {
             return await _context.Payments.ToListAsync();

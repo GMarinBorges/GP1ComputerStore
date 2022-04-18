@@ -24,6 +24,7 @@ namespace GP1ComputerStore.Controllers
 
         // GET: api/Employees
         [HttpGet]
+
         public async Task<ActionResult<IEnumerable<Employee>>> GetEmployees()
         {
             return await _context.Employees.ToListAsync();
